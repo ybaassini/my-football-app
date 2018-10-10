@@ -1,0 +1,20 @@
+<div class="players">
+  <div class="players__header">
+    <div class="players__header-back" (click)="goBack()">
+      < Back </div>
+        <div class="players__header-teamName">{{team}}</div>
+    </div>
+    <div class="players__list">
+      <div class="players__list__player" *ngFor="let player of players">
+        <div class="players__list__player-thumbnail">
+          <img [src]="player.strThumb" [alt]="player.strPlayer">
+        </div>
+        <div class="players__list__player-description">
+          <span class="players__list__player-description-name">{{player.strPlayer}}</span>
+          <span class="players__list__player-description-position">{{player.strPosition}}</span>
+          <span class="players__list__player-description-birthdate">birthdate: {{player.dateBorn}}</span>
+          <span class="players__list__player-description-price" *ngIf="player.strSigning">price: {{player.strSigning}}</span>
+        </div>
+      </div>
+    </div>
+  </div>

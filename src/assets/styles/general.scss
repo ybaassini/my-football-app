@@ -1,0 +1,20 @@
+/*
+ * GENERAL
+ */
+
+ @import 'variables';
+
+* {
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font__general;
+  color: $color__blue;
+}

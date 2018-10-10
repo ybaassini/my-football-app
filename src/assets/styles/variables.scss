@@ -1,0 +1,25 @@
+/*
+ * VARIABLES
+ */
+ @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+//== Screen Sizes
+$screen__xl: 1400px;
+$screen__lg: 1230px;
+$screen__md: 1024px;
+$screen__sm: 768px;
+$screen__xs: 520px;
+$screen__xxs: 320px;
+$mobile__portrait: '(max-width: #{ $screen__xxs })';
+$mobile: '(max-width: #{ $screen__xs })';
+$desktop: '(min-width: #{ $screen__sm })';
+//== Colors
+$color__white: #fff;
+$color__black: #000;
+$color__grey: #cecece;
+$color__blue: #10314c;
+$color__blue--light: #0089cd;
+
+//== Fonts
+$font__general: 'Montserrat', sans-serif;
+$font-size__base: 16;

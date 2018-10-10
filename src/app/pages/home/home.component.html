@@ -1,0 +1,10 @@
+<div class="home">
+  <div class="home-header">
+    <input type="search" class="home-header__search" [(ngModel)]="teamService.club" (change)="getTeams($event)">
+  </div>
+  <div class="home-list" *ngIf="teams !== null">
+    <div class="home-list-team" *ngFor="let team of teamService.teams.getValue()" [routerLink]="['/team/'+ team.strTeam]">
+      <img class="home-list-team__badge" [src]="team.strTeamBadge" [alt]="team.strTeam">
+    </div>
+  </div>
+</div>
